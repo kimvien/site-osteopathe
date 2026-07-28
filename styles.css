@@ -237,6 +237,14 @@ section + section{padding-top:76px;}
 .stat .n{font-family:var(--serif); font-size:2rem; color:var(--tide);}
 .stat .l{font-family:var(--mono); font-size:.7rem; text-transform:uppercase; letter-spacing:.06em; color:var(--seaglass);}
 
+/* ---------- common bottom block (3 columns) ---------- */
+.common-block{background:var(--chalk-warm);}
+.common-grid{display:grid; grid-template-columns:1.2fr 1fr 1fr; gap:44px; align-items:start;}
+.common-grid h2{font-family:var(--serif); color:var(--tide); font-size:1.25rem; margin:0 0 14px;}
+.common-grid p{margin:0 0 12px; color:#2B3530; font-size:.94rem;}
+.common-grid strong{color:var(--tide);}
+@media (max-width:820px){.common-grid{grid-template-columns:1fr;}}
+
 /* ---------- category icons ---------- */
 .cat-icon{
   display:inline-flex; align-items:center; justify-content:center;
