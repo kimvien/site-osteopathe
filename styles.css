@@ -237,6 +237,16 @@ section + section{padding-top:76px;}
 .stat .n{font-family:var(--serif); font-size:2rem; color:var(--tide);}
 .stat .l{font-family:var(--mono); font-size:.7rem; text-transform:uppercase; letter-spacing:.06em; color:var(--seaglass);}
 
+/* ---------- category icons ---------- */
+.cat-icon{
+  display:inline-flex; align-items:center; justify-content:center;
+  width:40px; height:40px; border-radius:50%;
+  background:var(--chalk-warm); color:var(--tide);
+  margin-bottom:12px;
+}
+.cat-icon svg{width:20px; height:20px;}
+.care-card .cat-icon{background:var(--chalk); color:var(--clay);}
+
 /* ---------- testimonial ---------- */
 .testimonial{
   background:var(--tide); color:var(--white); border-radius:8px; padding:44px;
