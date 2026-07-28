@@ -135,7 +135,7 @@ nav.primary details ul li a:hover{background:var(--chalk);}
 .hero{
   background:var(--tide);
   color:var(--white);
-  padding:64px 0 96px;
+  padding:64px 0 64px;
   position:relative;
 }
 .hero .wrap{
@@ -169,7 +169,6 @@ nav.primary details ul li a:hover{background:var(--chalk);}
   background:var(--white); color:var(--ink);
   border-radius:8px; padding:26px 26px 22px;
   box-shadow:0 20px 44px rgba(18,38,47,.28);
-  margin-bottom:-96px;
   position:relative; z-index:5;
 }
 .tide-card h2{
