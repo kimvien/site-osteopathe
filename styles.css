@@ -133,9 +133,9 @@ nav.primary details ul li a:hover{background:var(--chalk);}
 
 /* ---------- hero ---------- */
 .hero{
-  background:linear-gradient(180deg, var(--tide) 0%, var(--tide) 62%, var(--chalk) 62%);
+  background:var(--tide);
   color:var(--white);
-  padding:64px 0 0;
+  padding:64px 0 96px;
   position:relative;
 }
 .hero .wrap{
