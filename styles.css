@@ -6,7 +6,9 @@
    that reads as clinical and trustworthy rather than clinical-cold.
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap');
+/* Fonts are loaded via <link rel="preconnect"> + <link rel="stylesheet">
+   in the HTML head for faster first paint (avoids @import's render-blocking
+   double round-trip). */
 
 :root{
   --tide:       #1B3A4B;   /* deep channel blue — headings, nav */
