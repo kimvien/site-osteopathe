@@ -28,7 +28,9 @@
 html{scroll-behavior:smooth;}
 body{
   margin:0;
-  background:var(--chalk);
+  background-color:var(--chalk);
+  background-image:radial-gradient(rgba(27,58,75,.05) 1px, transparent 1px);
+  background-size:22px 22px;
   color:var(--ink);
   font-family:var(--sans);
   font-size:17px;
@@ -75,10 +77,11 @@ a:focus-visible, button:focus-visible{
 
 /* ---------- header / nav ---------- */
 header.site{
-  background:var(--tide);
+  background:linear-gradient(180deg, var(--tide) 0%, #1F4257 100%);
   color:var(--white);
   position:sticky; top:0; z-index:100;
   border-bottom:1px solid rgba(255,255,255,.08);
+  box-shadow:0 2px 18px rgba(18,38,47,.18);
 }
 header.site .wrap{
   display:flex; align-items:center; justify-content:space-between;
@@ -133,10 +136,20 @@ nav.primary details ul li a:hover{background:var(--chalk);}
 
 /* ---------- hero ---------- */
 .hero{
-  background:var(--tide);
+  background:
+    radial-gradient(ellipse 900px 500px at 85% -10%, rgba(110,143,134,.25), transparent 60%),
+    linear-gradient(155deg, var(--tide) 0%, var(--tide-deep) 100%);
   color:var(--white);
   padding:64px 0 64px;
   position:relative;
+  overflow:hidden;
+}
+.hero::after{
+  content:'';
+  position:absolute; left:0; right:0; bottom:0; height:64px;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 64' preserveAspectRatio='none'%3E%3Cpath d='M0 32 Q 100 4 200 32 T 400 32 T 600 32 T 800 32 T 1000 32 T 1200 32 V64 H0 Z' fill='%23FBFAF6' fill-opacity='0.05'/%3E%3C/svg%3E");
+  background-size:1200px 64px; background-repeat:repeat-x;
+  pointer-events:none;
 }
 .hero .wrap{
   display:grid; grid-template-columns:1.1fr .9fr; gap:48px; align-items:end;
@@ -158,18 +171,24 @@ nav.primary details ul li a:hover{background:var(--chalk);}
   display:inline-block; padding:13px 22px; border-radius:4px;
   font-weight:600; font-size:.93rem; text-decoration:none;
   border:1px solid transparent;
+  transition:transform .15s ease, box-shadow .15s ease;
 }
-.btn-primary{background:var(--clay); color:var(--white);}
-.btn-primary:hover{background:#9c4830;}
-.btn-ghost{border-color:rgba(255,255,255,.4); color:var(--white);}
-.btn-ghost:hover{border-color:var(--white); background:rgba(255,255,255,.08);}
+.btn-primary{
+  background:linear-gradient(155deg, #C1633F 0%, var(--clay) 55%, #9c4830 100%);
+  color:var(--white);
+  box-shadow:0 8px 20px rgba(181,87,58,.35), inset 0 1px 0 rgba(255,255,255,.18);
+}
+.btn-primary:hover{transform:translateY(-1px); box-shadow:0 12px 26px rgba(181,87,58,.42), inset 0 1px 0 rgba(255,255,255,.2);}
+.btn-ghost{border-color:rgba(255,255,255,.4); color:var(--white); backdrop-filter:blur(2px);}
+.btn-ghost:hover{border-color:var(--white); background:rgba(255,255,255,.1); transform:translateY(-1px);}
 
 /* signature: tide gauge */
 .tide-card{
   background:var(--white); color:var(--ink);
   border-radius:8px; padding:26px 26px 22px;
-  box-shadow:0 20px 44px rgba(18,38,47,.28);
+  box-shadow:0 24px 50px rgba(18,38,47,.32), 0 1px 0 rgba(255,255,255,.6) inset;
   position:relative; z-index:5;
+  border-top:4px solid var(--clay);
 }
 .tide-card h2{
   font-family:var(--mono); font-size:.72rem; letter-spacing:.1em;
@@ -207,12 +226,17 @@ section + section{padding-top:76px;}
 .care-grid{
   display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:2px;
   background:var(--line); border:1px solid var(--line); border-radius:8px; overflow:hidden;
+  box-shadow:0 14px 34px rgba(18,38,47,.08);
 }
 .care-card{
   background:var(--white); padding:28px 24px; text-decoration:none; color:var(--ink);
   display:flex; flex-direction:column; gap:10px; min-height:190px;
+  position:relative; transition:transform .18s ease, box-shadow .18s ease, z-index 0s;
 }
-.care-card:hover{background:var(--chalk);}
+.care-card:hover{
+  background:linear-gradient(165deg, var(--white) 0%, var(--chalk) 100%);
+  transform:translateY(-3px); box-shadow:0 16px 30px rgba(18,38,47,.16); z-index:2;
+}
 .care-card .num{font-family:var(--mono); font-size:.72rem; color:var(--seaglass);}
 .care-card h3{font-family:var(--serif); font-size:1.18rem; margin:0; color:var(--tide);}
 .care-card p{margin:0; font-size:.88rem; color:#4A554F; flex:1;}
@@ -229,7 +253,11 @@ section + section{padding-top:76px;}
 }
 
 /* ---------- panel / stat strip ---------- */
-.panel{background:var(--chalk-warm); border-radius:8px; padding:40px;}
+.panel{
+  background:linear-gradient(165deg, var(--chalk-warm) 0%, #DBDECF 100%);
+  border-radius:8px; padding:40px;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.5), 0 1px 3px rgba(18,38,47,.06);
+}
 .stat-strip{display:flex; gap:0; flex-wrap:wrap; border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
 .stat{flex:1; min-width:150px; padding:26px 22px; border-left:1px solid var(--line);}
 .stat:first-child{border-left:none;}
@@ -237,7 +265,7 @@ section + section{padding-top:76px;}
 .stat .l{font-family:var(--mono); font-size:.7rem; text-transform:uppercase; letter-spacing:.06em; color:var(--seaglass);}
 
 /* ---------- common bottom block (3 columns) ---------- */
-.common-block{background:var(--chalk-warm);}
+.common-block{background:linear-gradient(165deg, var(--chalk-warm) 0%, #DBDECF 100%); box-shadow:inset 0 1px 0 rgba(255,255,255,.5);}
 .common-grid{display:grid; grid-template-columns:1.2fr 1fr 1fr; gap:44px; align-items:start;}
 .common-grid h2{font-family:var(--serif); color:var(--tide); font-size:1.25rem; margin:0 0 14px;}
 .common-grid p{margin:0 0 12px; color:#2B3530; font-size:.94rem;}
@@ -256,8 +284,10 @@ section + section{padding-top:76px;}
 
 /* ---------- testimonial ---------- */
 .testimonial{
-  background:var(--tide); color:var(--white); border-radius:8px; padding:44px;
+  background:radial-gradient(ellipse 600px 300px at 15% 0%, rgba(110,143,134,.35), transparent 60%), linear-gradient(155deg, var(--tide) 0%, var(--tide-deep) 100%);
+  color:var(--white); border-radius:8px; padding:44px;
   font-family:var(--serif); font-size:1.3rem; line-height:1.5; font-weight:400;
+  box-shadow:0 20px 40px rgba(18,38,47,.18);
 }
 .testimonial cite{
   display:block; font-family:var(--mono); font-style:normal; font-size:.76rem;
@@ -274,13 +304,14 @@ section + section{padding-top:76px;}
 
 /* ---------- CTA band ---------- */
 .cta-band{
-  background:var(--tide-deep); color:var(--white); padding:64px 0; text-align:center;
+  background:radial-gradient(ellipse 700px 400px at 50% 0%, rgba(181,87,58,.14), transparent 65%), linear-gradient(180deg, var(--tide-deep) 0%, #0D1E25 100%);
+  color:var(--white); padding:64px 0; text-align:center;
 }
 .cta-band h2{font-family:var(--serif); font-weight:500; font-size:2rem; margin:0 0 14px;}
 .cta-band p{color:rgba(255,255,255,.78); margin:0 0 28px;}
 
 /* ---------- footer ---------- */
-footer.site{background:var(--tide-deep); color:rgba(255,255,255,.78); padding:52px 0 28px; font-size:.9rem;}
+footer.site{background:linear-gradient(180deg, var(--tide-deep) 0%, #0D1E25 100%); color:rgba(255,255,255,.78); padding:52px 0 28px; font-size:.9rem;}
 .foot-grid{display:grid; grid-template-columns:1.3fr 1fr 1fr; gap:40px; margin-bottom:36px;}
 footer.site h4{font-family:var(--mono); font-size:.72rem; text-transform:uppercase; letter-spacing:.08em; color:var(--seaglass); margin:0 0 14px;}
 footer.site ul{list-style:none; padding:0; margin:0; display:grid; gap:9px;}
@@ -289,7 +320,10 @@ footer.site a:hover{color:var(--white);}
 .foot-bottom{border-top:1px solid rgba(255,255,255,.12); padding-top:20px; font-size:.78rem; display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;}
 
 /* ---------- page hero (secondary pages) ---------- */
-.page-hero{background:var(--tide); color:var(--white); padding:56px 0 46px;}
+.page-hero{
+  background:radial-gradient(ellipse 700px 350px at 90% -20%, rgba(110,143,134,.22), transparent 60%), linear-gradient(155deg, var(--tide) 0%, var(--tide-deep) 100%);
+  color:var(--white); padding:56px 0 46px;
+}
 .page-hero h1{font-family:var(--serif); font-weight:500; font-size:clamp(1.9rem,4vw,2.7rem); margin:14px 0 12px; max-width:18ch;}
 .page-hero p{max-width:56ch; color:rgba(255,255,255,.85); margin:0;}
 .breadcrumb{font-family:var(--mono); font-size:.72rem; color:var(--seaglass); text-decoration:none;}
