@@ -280,6 +280,16 @@ footer.site a:hover{color:var(--white);}
 .prose{max-width:70ch;}
 .prose h2{font-family:var(--serif); color:var(--tide); font-size:1.5rem; margin:38px 0 14px;}
 .prose p{margin:0 0 18px; color:#2B3530;}
+.prose strong{color:var(--tide); font-weight:600;}
+.prose img.inline-figure{
+  float:right; width:280px; max-width:42%; height:auto;
+  margin:4px 0 22px 28px; border-radius:6px;
+  box-shadow:0 10px 24px rgba(18,38,47,.14);
+}
+.prose::after{content:''; display:table; clear:both;}
+@media (max-width:700px){
+  .prose img.inline-figure{float:none; width:100%; max-width:100%; margin:8px 0 24px;}
+}
 
 /* ---------- responsive ---------- */
 @media (max-width:880px){
