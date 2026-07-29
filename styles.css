@@ -88,6 +88,7 @@ header.site{
 header.site .wrap{
   display:flex; align-items:center; justify-content:space-between;
   padding-top:16px; padding-bottom:16px; gap:20px;
+  position:relative;
 }
 .brand{
   font-family:var(--serif);
@@ -351,5 +352,40 @@ footer.site a:hover{color:var(--white);}
   .hero{padding-bottom:40px;}
   .two-col{grid-template-columns:1fr;}
   .foot-grid{grid-template-columns:1fr 1fr;}
-  nav.primary{display:none;}
+
+  .nav-toggle-checkbox{position:absolute; opacity:0; pointer-events:none;}
+  .nav-toggle-label{
+    display:flex; flex-direction:column; justify-content:center; gap:5px;
+    width:34px; height:34px; cursor:pointer; padding:0; z-index:110;
+  }
+  .nav-toggle-label span{
+    display:block; width:26px; height:2px; background:var(--white);
+    border-radius:2px; transition:transform .2s ease, opacity .2s ease;
+  }
+  nav.primary{
+    display:none;
+    position:absolute; top:100%; left:0; right:0;
+    background:var(--tide-deep);
+    flex-direction:column; align-items:stretch; gap:0;
+    padding:10px 0 18px;
+    box-shadow:0 16px 30px rgba(18,38,47,.35);
+  }
+  nav.primary > a, nav.primary details summary{
+    padding:13px 28px; font-size:1rem;
+  }
+  nav.primary details ul{
+    position:static; box-shadow:none; background:rgba(255,255,255,.04);
+    margin:0 28px; border-radius:4px;
+  }
+  nav.primary details ul li a{color:rgba(255,255,255,.85); padding:11px 14px;}
+  nav.primary details ul li a:hover{background:rgba(255,255,255,.08);}
+  .nav-cta{margin:10px 28px 0; text-align:center;}
+
+  .nav-toggle-checkbox:checked ~ nav.primary{display:flex;}
+  .nav-toggle-checkbox:checked ~ .nav-toggle-label span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+  .nav-toggle-checkbox:checked ~ .nav-toggle-label span:nth-child(2){opacity:0;}
+  .nav-toggle-checkbox:checked ~ .nav-toggle-label span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+}
+@media (min-width:881px){
+  .nav-toggle-label{display:none;}
 }
