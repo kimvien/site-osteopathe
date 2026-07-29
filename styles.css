@@ -346,6 +346,11 @@ footer.site a:hover{color:var(--white);}
 }
 
 /* ---------- responsive ---------- */
+.nav-toggle-checkbox{
+  position:absolute; opacity:0; pointer-events:none; width:0; height:0;
+}
+.nav-toggle-label{display:none;}
+
 @media (max-width:880px){
   .hero .wrap{grid-template-columns:1fr;}
   .tide-card{margin-bottom:0;}
@@ -353,7 +358,6 @@ footer.site a:hover{color:var(--white);}
   .two-col{grid-template-columns:1fr;}
   .foot-grid{grid-template-columns:1fr 1fr;}
 
-  .nav-toggle-checkbox{position:absolute; opacity:0; pointer-events:none;}
   .nav-toggle-label{
     display:flex; flex-direction:column; justify-content:center; gap:5px;
     width:34px; height:34px; cursor:pointer; padding:0; z-index:110;
@@ -385,7 +389,4 @@ footer.site a:hover{color:var(--white);}
   .nav-toggle-checkbox:checked ~ .nav-toggle-label span:nth-child(1){transform:translateY(7px) rotate(45deg);}
   .nav-toggle-checkbox:checked ~ .nav-toggle-label span:nth-child(2){opacity:0;}
   .nav-toggle-checkbox:checked ~ .nav-toggle-label span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
-}
-@media (min-width:881px){
-  .nav-toggle-label{display:none;}
 }
