@@ -123,6 +123,26 @@ nav.primary a{
   color:rgba(255,255,255,.88);
 }
 nav.primary > a:hover, nav.primary summary:hover{color:var(--seaglass);}
+.nav-split{position:relative; display:flex; align-items:center; gap:2px;}
+.nav-split-toggle{
+  background:none; border:none; color:rgba(255,255,255,.7); cursor:pointer;
+  font-size:.7rem; padding:4px; line-height:1;
+}
+.nav-split-toggle:hover{color:var(--seaglass);}
+.nav-split-menu{
+  display:none;
+  position:absolute; top:100%; left:-14px; margin-top:14px;
+  background:var(--white); color:var(--ink);
+  list-style:none; padding:8px; border-radius:6px; min-width:210px;
+  box-shadow:0 12px 28px rgba(18,38,47,.22);
+  z-index:50;
+}
+.nav-split-menu.open{display:block;}
+.nav-split-menu li a{
+  display:block; padding:9px 12px; border-radius:4px; color:var(--ink);
+  font-size:.88rem;
+}
+.nav-split-menu li a:hover{background:var(--chalk);}
 nav.primary details ul{
   position:absolute; top:100%; left:-14px; margin-top:14px;
   background:var(--white); color:var(--ink);
@@ -379,15 +399,19 @@ footer.site a:hover{color:var(--white);}
     padding:10px 0 18px;
     box-shadow:0 16px 30px rgba(18,38,47,.35);
   }
-  nav.primary > a, nav.primary details summary{
+  nav.primary > a, nav.primary details summary, .nav-split{
     padding:13px 28px; font-size:1rem;
   }
-  nav.primary details ul{
+  .nav-split{display:flex; justify-content:space-between; align-items:center; padding-right:14px;}
+  .nav-split > a{padding:0; font-size:1rem;}
+  .nav-split-toggle{font-size:1rem; padding:6px;}
+  nav.primary details ul, .nav-split-menu{
     position:static; box-shadow:none; background:rgba(255,255,255,.04);
     margin:0 28px; border-radius:4px;
   }
-  nav.primary details ul li a{color:rgba(255,255,255,.85); padding:11px 14px;}
-  nav.primary details ul li a:hover{background:rgba(255,255,255,.08);}
+  .nav-split-menu{width:auto; min-width:0;}
+  nav.primary details ul li a, .nav-split-menu li a{color:rgba(255,255,255,.85); padding:11px 14px;}
+  nav.primary details ul li a:hover, .nav-split-menu li a:hover{background:rgba(255,255,255,.08);}
   .nav-cta{margin:10px 28px 0; text-align:center;}
 
   .nav-toggle-checkbox:checked ~ nav.primary{display:flex;}

@@ -31,15 +31,16 @@
     <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
     <label for="nav-toggle" class="nav-toggle-label" aria-label="Ouvrir le menu"><span></span><span></span><span></span></label>
     <nav class="primary" aria-label="Navigation principale">
-      <details>
-        <summary><a href="index.html">Accueil</a></summary>
-        <ul>
+      <div class="nav-split">
+        <a href="index.html">Accueil</a>
+        <button type="button" class="nav-split-toggle" aria-label="Afficher le sous-menu Accueil" aria-expanded="false">&#9662;</button>
+        <ul class="nav-split-menu">
           <li><a href="urgences.html">Ostéopathe en urgence</a></li>
           <li><a href="domicile.html">Ostéopathe à domicile</a></li>
           <li><a href="entreprise.html">Ostéopathe en entreprise</a></li>
           <li><a href="actualites.html">Articles</a></li>
         </ul>
-      </details>
+      </div>
       <a href="osteopathie.html">L'<strong>ostéopathe</strong> Caen</a>
       <details>
         <summary>Nourrisson</summary>
@@ -171,16 +172,39 @@
 
 <script>
 (function(){
-  var items = document.querySelectorAll('nav.primary details');
-  items.forEach(function(d){
+  var detailsItems = document.querySelectorAll('nav.primary details');
+  var splitToggle = document.querySelector('.nav-split-toggle');
+  var splitMenu = document.querySelector('.nav-split-menu');
+
+  function closeAll(except){
+    detailsItems.forEach(function(d){ if (d !== except) d.open = false; });
+    if (splitMenu && except !== 'split') {
+      splitMenu.classList.remove('open');
+      if (splitToggle) splitToggle.setAttribute('aria-expanded', 'false');
+    }
+  }
+
+  detailsItems.forEach(function(d){
     d.addEventListener('toggle', function(){
-      if (d.open) {
-        items.forEach(function(other){
-          if (other !== d) other.open = false;
-        });
-      }
+      if (d.open) closeAll(d);
     });
   });
+
+  if (splitToggle && splitMenu){
+    splitToggle.addEventListener('click', function(e){
+      e.preventDefault();
+      var willOpen = !splitMenu.classList.contains('open');
+      closeAll(willOpen ? 'split' : null);
+      splitMenu.classList.toggle('open', willOpen);
+      splitToggle.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
+    });
+    document.addEventListener('click', function(e){
+      if (!e.target.closest('.nav-split')) {
+        splitMenu.classList.remove('open');
+        splitToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
 })();
 </script>
 </body>
