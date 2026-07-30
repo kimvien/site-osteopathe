@@ -162,5 +162,19 @@
   </div>
 </footer>
 
+<script>
+(function(){
+  var items = document.querySelectorAll('nav.primary details');
+  items.forEach(function(d){
+    d.addEventListener('toggle', function(){
+      if (d.open) {
+        items.forEach(function(other){
+          if (other !== d) other.open = false;
+        });
+      }
+    });
+  });
+})();
+</script>
 </body>
 </html>
