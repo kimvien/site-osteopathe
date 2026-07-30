@@ -31,39 +31,39 @@
     <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
     <label for="nav-toggle" class="nav-toggle-label" aria-label="Ouvrir le menu"><span></span><span></span><span></span></label>
     <nav class="primary" aria-label="Navigation principale">
-      <details>
-        <summary>Accueil</summary>
-        <ul>
+      <div class="nav-dropdown">
+        <a href="index.html">Accueil</a>
+        <ul class="dropdown-menu">
           <li><a href="urgences.html">Ostéopathe en urgence</a></li>
           <li><a href="domicile.html">Ostéopathe à domicile</a></li>
           <li><a href="entreprise.html">Ostéopathe en entreprise</a></li>
           <li><a href="actualites.html">Articles</a></li>
         </ul>
-      </details>
+      </div>
       <a href="osteopathie.html">L'<strong>ostéopathe</strong> Caen</a>
-      <details>
-        <summary>Nourrisson</summary>
-        <ul>
+      <div class="nav-dropdown">
+        <a href="nourrisson.html">Nourrisson</a>
+        <ul class="dropdown-menu">
           <li><a href="nourrisson.html">Les troubles du nourrisson</a></li>
           <li><a href="nourrisson-caen.html">Ostéopathe nourrisson Caen</a></li>
           <li><a href="nourrisson-ouistreham.html">Ostéopathe nourrisson Ouistreham</a></li>
         </ul>
-      </details>
-      <details>
-        <summary>Sportif</summary>
-        <ul>
+      </div>
+      <div class="nav-dropdown">
+        <span>Sportif</span>
+        <ul class="dropdown-menu">
           <li><a href="sport-caen.html">Ostéopathe sport Caen</a></li>
           <li><a href="sport-ouistreham.html">Ostéopathe sport Ouistreham</a></li>
           <li><a href="traumatismes.html">Les traumatismes</a></li>
         </ul>
-      </details>
+      </div>
       <a href="femme-enceinte.html">Femme enceinte</a>
-      <details>
-        <summary>Prises en charge</summary>
-        <ul>
+      <div class="nav-dropdown">
+        <span>Prises en charge</span>
+        <ul class="dropdown-menu">
           <li><a href="pathologies-degeneratives.html">Les pathologies dégénératives</a></li>
         </ul>
-      </details>
+      </div>
       <a href="contact.html" class="nav-cta">Prendre RDV</a>
     </nav>
   </div>
@@ -166,19 +166,5 @@
   </div>
 </footer>
 
-<script>
-(function(){
-  var items = document.querySelectorAll('nav.primary details');
-  items.forEach(function(d){
-    d.addEventListener('toggle', function(){
-      if (d.open) {
-        items.forEach(function(other){
-          if (other !== d) other.open = false;
-        });
-      }
-    });
-  });
-})();
-</script>
 </body>
 </html>
