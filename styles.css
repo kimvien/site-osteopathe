@@ -40,7 +40,7 @@ body{
   -webkit-font-smoothing:antialiased;
 }
 
-img{max-width:100%;display:block;}
+img{max-width:100%;height:auto;display:block;}
 a{color:inherit;}
 
 @media (prefers-reduced-motion: reduce){
@@ -397,3 +397,28 @@ footer.site a:hover{color:var(--white);}
   .nav-toggle-checkbox:checked ~ .nav-toggle-label span:nth-child(2){opacity:0;}
   .nav-toggle-checkbox:checked ~ .nav-toggle-label span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
 }
+
+/* ---------- pages locales Caen (cabinet, sport, nourrisson) ---------- */
+.page-hero .hero-actions{margin:26px 0 0;}
+.infos dl{margin:0; display:grid; gap:18px;}
+.infos dt{font-family:var(--mono); font-size:.72rem; letter-spacing:.08em; text-transform:uppercase; color:var(--seaglass); margin:0 0 4px;}
+.infos dd{margin:0; color:#2B3530;}
+.infos a{color:var(--clay);}
+.infos a[href^="tel"]{white-space:nowrap;}
+.care-grid.care-6{grid-template-columns:repeat(3,1fr);}
+@media (max-width:900px){.care-grid.care-6{grid-template-columns:repeat(2,1fr);}}
+@media (max-width:560px){.care-grid.care-6{grid-template-columns:1fr;}}
+.steps{padding-left:1.4em; margin:0 0 22px;}
+.steps li{margin:0 0 12px; color:#2B3530; padding-left:4px;}
+.steps li::marker{font-family:var(--serif); color:var(--clay); font-weight:600;}
+.prose .checklist{margin:0 0 22px;}
+.prose .checklist li{color:#2B3530;}
+.faq details{border-top:1px solid var(--line); padding:16px 0;}
+.faq details:last-of-type{border-bottom:1px solid var(--line);}
+.faq summary{cursor:pointer; font-family:var(--serif); font-size:1.1rem; color:var(--tide);}
+.faq summary:focus-visible{outline:2px solid var(--clay); outline-offset:3px;}
+.faq details p{margin:12px 0 0;}
+.faq + p{margin-top:26px;}
+.article-cta{border-left:3px solid var(--clay); background:var(--white); padding:16px 20px; border-radius:0 6px 6px 0; margin:30px 0 0;}
+.prose p.article-cta{color:var(--ink);}
+.article-cta a{color:var(--clay);}
