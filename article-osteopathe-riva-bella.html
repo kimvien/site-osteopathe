@@ -122,6 +122,8 @@
       <img src="https://osteopathe-caen-ouistreham.fr/Image%20site/LOGO2.webp" width="38" height="38" alt="Logo Joris Dargazanli Ostéopathe" style="height:38px;width:38px;border-radius:50%;object-fit:cover;">
       <span>Joris Dargazanli<small>Ostéopathe D.O. &mdash; Caen &amp; Ouistreham</small></span>
     </a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+    <label for="nav-toggle" class="nav-toggle-label" aria-label="Ouvrir le menu"><span></span><span></span><span></span></label>
     <nav class="primary" aria-label="Navigation principale">
       <div class="nav-dropdown">
         <a href="index.html">Accueil</a>
@@ -159,7 +161,7 @@
           <li><a href="pathologies-degeneratives.html">Les pathologies dégénératives</a></li>
         </ul>
       </div>
-      <a href="contact.html" class="nav-cta">Prendre RDV</a>
+      <a href="https://www.doctolib.fr/osteopathe/ouistreham/joris-dargazanli" class="nav-cta">Prendre RDV</a>
     </nav>
   </div>
 </header>
@@ -171,13 +173,17 @@
       <p class="eyebrow" style="margin-top:14px;">Ostéopathe près de chez vous</p>
       <h1>Ostéopathe à Riva-Bella</h1>
       <p>30 juil. 2026, mis à jour le 8 oct. 2026 &middot; 5 min de lecture &middot; dargazanli joris</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://www.doctolib.fr/osteopathe/ouistreham/joris-dargazanli">Prendre rendez-vous</a>
+        <a class="btn btn-ghost" href="tel:+33609023416">Appeler le 06 09 02 34 16</a>
+      </div>
     </div>
   </section>
 
   <section><div class="wrap prose">
 
   <img src="https://osteopathe-caen-ouistreham.fr/Image%20site/coucher-de-soleil-plage-riva-bella-ouistreham.webp" width="828" height="488" alt="Coucher de soleil sur les planches de la plage de Riva-Bella, à Ouistreham" class="inline-figure" loading="lazy" decoding="async">
-  <p>Vous habitez <strong>Riva-Bella</strong>, le quartier balnéaire de Ouistreham, ou vous y passez vos vacances, et vous cherchez un ostéopathe sans quitter le bord de mer&nbsp;? Le cabinet de Joris Dargazanli, ostéopathe D.O. agréé par l'ARS Normandie, se trouve au 4 route de Lion, à quelques minutes à pied du front de mer, de la plage et du casino de Riva-Bella.</p>
+  <p>Vous habitez <strong>Riva-Bella</strong>, le quartier balnéaire de Ouistreham, ou vous y passez vos vacances, et vous cherchez un ostéopathe sans quitter le bord de mer&nbsp;? Le cabinet de Joris Dargazanli, ostéopathe D.O. enregistré auprès de l'ARS Normandie, se trouve au 4 route de Lion, à quelques minutes à pied du front de mer, de la plage et du casino de Riva-Bella.</p>
 
   <h2 style="margin-top:0;">Un quartier, des profils très différents</h2>
   <p>Riva-Bella mêle des habitants à l'année, de nombreux retraités, des familles en résidence secondaire et, l'été, des vacanciers venus pour la plage. Ces profils n'ont pas les mêmes besoins&nbsp;:</p>
@@ -255,7 +261,7 @@
         <h2>Me contacter</h2>
         <p><strong>Ostéopathe Caen - Dargazanli Joris</strong><br>
         <a href="mailto:Dargazanli.osteo@gmail.com">Dargazanli.osteo@gmail.com</a><br>
-        06 09 02 34 16</p>
+        <a href="tel:+33609023416">06 09 02 34 16</a></p>
         <p><a href="https://www.doctolib.fr/osteopathe/ouistreham/joris-dargazanli">Rdv en ligne sur Doctolib</a><br>
         4 route de Lion, 14150 Ouistreham<br>
         43 rue Gémare, 14000 Caen</p>
@@ -277,8 +283,9 @@
     <div class="foot-grid">
       <div>
         <h4>Cabinet</h4>
-        <p style="margin:0 0 6px;">Joris Dargazanli — Ostéopathe D.O.<br>Agréé ARS Normandie</p>
-        <p style="margin:0;">06 09 02 34 16<br>Dargazanli.osteo@gmail.com</p>
+        <p style="margin:0 0 6px;">Joris Dargazanli — Ostéopathe D.O.<br>Enregistré auprès de l'ARS Normandie</p>
+        <p style="margin:0;"><a href="tel:+33609023416">06 09 02 34 16</a><br><a href="mailto:Dargazanli.osteo@gmail.com">Dargazanli.osteo@gmail.com</a></p>
+        <p style="margin:10px 0 0;font-size:.85rem;opacity:.8;">Urgence médicale : appelez le 15 ou le 112.</p>
       </div>
       <div>
         <h4>Adresses</h4>
@@ -304,15 +311,9 @@
   </div>
 </footer>
 
-<script>
-(function(){
-  var detailsItems = document.querySelectorAll('nav.primary details');
-  detailsItems.forEach(function(d){
-    d.addEventListener('toggle', function(){
-      if (d.open) { detailsItems.forEach(function(o){ if (o!==d) o.open=false; }); }
-    });
-  });
-})();
-</script>
+<div class="mobile-cta" role="navigation" aria-label="Prendre rendez-vous">
+  <a class="mobile-cta-book" href="https://www.doctolib.fr/osteopathe/ouistreham/joris-dargazanli">Réserver sur Doctolib</a>
+  <a class="mobile-cta-call" href="tel:+33609023416">Appeler</a>
+</div>
 </body>
 </html>
