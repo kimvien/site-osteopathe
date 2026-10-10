@@ -430,3 +430,23 @@ footer.site a:hover{color:var(--white);}
 .article-cta{border-left:3px solid var(--clay); background:var(--white); padding:16px 20px; border-radius:0 6px 6px 0; margin:30px 0 0;}
 .prose p.article-cta{color:var(--ink);}
 .article-cta a{color:var(--clay);}
+
+/* ---------- mobile : menu défilant et barre de réservation ---------- */
+.mobile-cta{display:none;}
+@media (max-width:880px){
+  nav.primary{max-height:calc(100dvh - 82px); overflow-y:auto; overscroll-behavior:contain; flex-wrap:nowrap;}
+  nav.primary > *{flex-shrink:0;}
+  nav.primary .nav-cta{order:-1; margin:6px 28px 12px;}
+  .mobile-cta{
+    display:flex; gap:10px; position:fixed; left:0; right:0; bottom:0; z-index:90;
+    padding:10px 16px calc(10px + env(safe-area-inset-bottom));
+    background:var(--tide-deep); box-shadow:0 -8px 24px rgba(18,38,47,.25);
+  }
+  .mobile-cta a{
+    display:flex; align-items:center; justify-content:center; min-height:48px;
+    border-radius:8px; font-weight:600; text-decoration:none; font-size:1rem;
+  }
+  .mobile-cta-book{flex:2; background:var(--clay); color:var(--white);}
+  .mobile-cta-call{flex:1; border:2px solid rgba(255,255,255,.55); color:var(--white);}
+  body{padding-bottom:calc(72px + env(safe-area-inset-bottom));}
+}
