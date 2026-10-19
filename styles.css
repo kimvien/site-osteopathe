@@ -329,7 +329,7 @@ section + section{padding-top:76px;}
 /* ---------- footer ---------- */
 footer.site{background:linear-gradient(180deg, var(--tide-deep) 0%, #0D1E25 100%); color:rgba(255,255,255,.78); padding:52px 0 28px; font-size:.9rem;}
 .foot-grid{display:grid; grid-template-columns:1.3fr 1fr 1fr; gap:40px; margin-bottom:36px;}
-footer.site h4{font-family:var(--mono); font-size:.72rem; text-transform:uppercase; letter-spacing:.08em; color:var(--seaglass); margin:0 0 14px;}
+footer.site h4, footer.site .foot-h{font-family:var(--mono); font-size:.72rem; text-transform:uppercase; letter-spacing:.08em; color:var(--seaglass); margin:0 0 14px;}
 footer.site ul{list-style:none; padding:0; margin:0; display:grid; gap:9px;}
 footer.site a{text-decoration:none;}
 footer.site a:hover{color:var(--white);}
