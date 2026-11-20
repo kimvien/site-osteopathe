@@ -7,6 +7,7 @@ Prise en charge du nourrisson, de la femme enceinte, du sportif, des douleurs de
 ## Cabinets et contact
 
 - [Accueil](https://osteopathe-caen-ouistreham.fr/index.html): présentation du cabinet de Ouistreham et des prises en charge
+- [Votre ostéopathe](https://osteopathe-caen-ouistreham.fr/joris-dargazanli-osteopathe.html): parcours, diplôme, numéro ADELI 140001397, formations et façon de travailler de Joris Dargazanli
 - [Ostéopathe à Caen](https://osteopathe-caen-ouistreham.fr/osteopathe-caen.html): cabinet du 43 rue Gémare, accès et horaires
 - [Communes autour de Ouistreham](https://osteopathe-caen-ouistreham.fr/osteopathe-autour-de-ouistreham.html): patients de la Côte de Nacre et des environs
 - [Prendre rendez-vous](https://osteopathe-caen-ouistreham.fr/contact.html): téléphone, e-mail et Doctolib
@@ -58,4 +59,5 @@ Pages pour les patients des communes proches. Le cabinet de Ouistreham (4 route 
 
 ## Optional
 
+- [Mentions légales](https://osteopathe-caen-ouistreham.fr/mentions-legales.html): éditeur, SIRET, hébergeur et données personnelles
 - [Plan du site](https://osteopathe-caen-ouistreham.fr/sitemap.xml)
