@@ -1,6 +1,6 @@
 # Joris Dargazanli, ostéopathe D.O. à Caen et Ouistreham
 
-> Ostéopathe D.O. installé depuis 2016, enregistré auprès de l'ARS Normandie et diplômé de l'Institut Supérieur d'Ostéopathie de Paris. Deux cabinets, à Ouistreham (4 route de Lion, 14150) et à Caen (43 rue Gémare, 14000), ouverts 7 jours sur 7 de 8 h à 20 h, avec des créneaux d'urgence. Téléphone : 06 09 02 34 16. Rendez-vous en ligne sur Doctolib.
+> Ostéopathe D.O. installé depuis 2016, enregistré auprès de l'ARS Normandie et diplômé de l'Institut Supérieur d'Ostéopathie de Paris. Deux cabinets, à Ouistreham (4 route de Lion, 14150) et à Caen (43 rue Gémare, 14000), ouverts 7 jours sur 7 de 8 h à 20 h, dimanche compris, avec des créneaux d'urgence. Téléphone : 06 09 02 34 16. Rendez-vous en ligne sur Doctolib.
 
 Prise en charge du nourrisson, de la femme enceinte, du sportif, des douleurs de dos et de nuque, des traumatismes et des pathologies dégénératives. Consultations au cabinet, à domicile et en entreprise.
 
@@ -30,10 +30,10 @@ Prise en charge du nourrisson, de la femme enceinte, du sportif, des douleurs de
 - [Tous les articles](https://osteopathe-caen-ouistreham.fr/actualites.html)
 - [Douleur au coccyx](https://osteopathe-caen-ouistreham.fr/article-douleur-coccyx.html): coccygodynie, causes, radios dynamiques, signes d'alerte, coussin et exercices
 - [Rectitude cervicale sur une radio](https://osteopathe-caen-ouistreham.fr/article-rectitude-cervicale.html)
-- [Sacralisation de L5 sur une radio](https://osteopathe-caen-ouistreham.fr/article-sacralisation-l5.html): vertèbre de transition lombo-sacrée, types de Castellvi, syndrome de Bertolotti
+- [Sacralisation de L5 sur une radio](https://osteopathe-caen-ouistreham.fr/article-sacralisation-l5.html): vertèbre de transition lombo-sacrée, conséquences, types de Castellvi, syndrome de Bertolotti
 - [Uncodiscarthrose sur une radio du cou](https://osteopathe-caen-ouistreham.fr/article-uncodiscarthrose.html): définition, étages C5-C6 et C6-C7, signes d'alerte, traitements et exercices
 - [Névralgie cervico-brachiale](https://osteopathe-caen-ouistreham.fr/article-nevralgie-cervico-brachiale.html)
-- [Névralgie d'Arnold](https://osteopathe-caen-ouistreham.fr/article-nevralgie-arnold.html)
+- [Névralgie d'Arnold (névralgie occipitale)](https://osteopathe-caen-ouistreham.fr/article-nevralgie-arnold.html): symptômes, traitements, durée, différence avec la malformation d'Arnold-Chiari
 - [Sciatique](https://osteopathe-caen-ouistreham.fr/article-sciatique.html): symptômes selon la racine L5 ou S1, causes, signes d'alerte, durée et traitements
 - [Mal de dos (lombalgie)](https://osteopathe-caen-ouistreham.fr/article-mal-de-dos.html): lombalgie commune, durée, signes d'alerte, ce qui aide selon la HAS
 - [Tête plate du nourrisson](https://osteopathe-caen-ouistreham.fr/article-tete-plate-brachycephalie-plagiocephalie.html)
@@ -58,8 +58,8 @@ Pages pour les patients des communes proches. Le cabinet de Ouistreham (4 route 
 - [Ostéopathe près de Luc-sur-Mer](https://osteopathe-caen-ouistreham.fr/osteopathe-luc-sur-mer.html): cabinet de Ouistreham à 9 km, 13 min ; urgences et vacanciers, suivi à l'année
 - [Ostéopathe près de Biéville-Beuville](https://osteopathe-caen-ouistreham.fr/osteopathe-bieville-beuville.html): cabinet de Ouistreham à 9 km, 12 min ; deux cabinets au choix, Caen ou Ouistreham
 - [Ostéopathe près de Ranville, Amfreville et Sallenelles](https://osteopathe-caen-ouistreham.fr/osteopathe-ranville.html): cabinet de Ouistreham à 9 à 11 km ; grossesse et nourrissons
-- [Ostéopathe près de Douvres-la-Délivrande](https://osteopathe-caen-ouistreham.fr/osteopathe-douvres-la-delivrande.html): cabinet de Ouistreham à 11 km, 15 min
-- [Ostéopathe près de Merville-Franceville-Plage](https://osteopathe-caen-ouistreham.fr/osteopathe-merville-franceville.html): cabinet de Ouistreham à 14 km, 18 min
+- [Ostéopathe près de Douvres-la-Délivrande](https://osteopathe-caen-ouistreham.fr/osteopathe-douvres-la-delivrande.html): cabinet de Ouistreham à 11 km, 15 min ; sportifs et familles, deux cabinets au choix
+- [Ostéopathe près de Merville-Franceville-Plage](https://osteopathe-caen-ouistreham.fr/osteopathe-merville-franceville.html): cabinet de Ouistreham à 14 km, 18 min ; plage, sports de glisse et vacanciers
 - [Ostéopathe près de Hérouville-Saint-Clair](https://osteopathe-caen-ouistreham.fr/article-osteopathe-herouville-saint-clair.html): à 5 km du cabinet de Caen
 
 ## Optional
